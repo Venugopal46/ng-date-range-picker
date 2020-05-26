@@ -1,0 +1,61 @@
+.container {
+  width: 238px;
+}
+.week {
+  display: flex;
+}
+.day {
+  min-width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: default;
+  color: #212B36;
+}
+.days .day {
+  font-size: 14px;
+  opacity: 0.8;
+}
+.selected {
+  background-color: #1976D2;
+  color: white;
+}
+.disabled {
+  opacity: 0.3;
+}
+.header {
+  display: flex;
+  padding: 0 15px 10px;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .arrow {
+    border-width: 0 0 2px 2px;
+    border-style: solid;
+    width: 6px;
+    height: 6px;
+    border-color: #212B36;
+    &.left {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+    &.right {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+  }
+}
+.nav {
+  min-width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.current-month {
+  flex: 1 0;
+}
